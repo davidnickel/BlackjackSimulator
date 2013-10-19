@@ -19,7 +19,6 @@ namespace Domain
 
         public void PlaceBet(Decimal bet)
         {
-            throw new NotImplementedException();
             Decrease(bet);
         }
 
