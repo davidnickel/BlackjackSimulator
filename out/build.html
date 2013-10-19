@@ -1,0 +1,149 @@
+
+          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+          
+          <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+          <head>
+          	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+          	<title>Build</title>
+          	<style type="text/css" media="screen">
+          		
+        		body {
+              background: #fff;			      
+        			font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+        			font-size:11px;
+        		  margin: 0; 
+              padding: 0;
+        		}
+      
+      	  	h1 {
+              font: bold 18px "Lucida Grande", Helvetica, sans-serif;      
+      	    	margin: 0 0 10px;
+      	    	padding: 12px;
+      	  	}
+            
+        		h3 {  padding:0; margin:0;}
+            
+        		ul { list-style-type:none; margin:5px 0; padding:0;}
+        						
+        		dl { margin:5px 5px; padding:0;}
+        		dt { font-weight:bold; margin:2px; }
+        		dd { margin:3px 2px 3px 5px; padding:5px 10px; }
+            
+        		#header { color: #fff; }
+        		#header .succeeded { background: #00C800; }
+        		#header .failed { background: #C20000; }
+        	
+        		#summary {
+        		    font: bold 10px "Lucida Grande", Helvetica, sans-serif;
+                margin: 0;        
+                padding: 5px 10px;
+                position: absolute;        
+        		    right: 0px;
+                text-align: right;
+        		    top: 0px;
+        		}
+        		#summary p { margin: 0 0 2px; }
+        		#summary #date { font-size: 14px; }
+        			
+            ul.files { padding-left:15px; }	
+        		
+        		.task table { color:#fff; width: 100%; }
+        		.succeeded table { background:#00C800; }
+        		.succeeded dd {
+                background: #DBFFB4;       
+                border-left: 5px solid #00C800;
+        		    border-bottom: 1px solid #00C800;
+                color: #3D7700;
+        		}
+        		.failed table { background:#C20000;}
+        		.failed dd {
+                background: #FFFBD3;      
+                border-left: 5px solid #C20000;
+        		    border-bottom: 1px solid #C20000;
+                color: #C20000; 
+        		}
+        		
+        		.not_run table { background: #999; } 
+      
+          	</style>
+          </head>
+          <body>
+        <div id="header">
+  <h1 class="succeeded">
+BlackJackSimulator Build Succeeded  </h1>
+  <div class="succeeded" id="summary">
+    <p id="duration">
+Finished in       <strong>4 seconds</strong>
+    </p>
+    <p id="date">
+September 25, 2008 17:01    </p>
+  </div>
+</div>
+<dl class="task succeeded">
+  <dt>
+    <table>
+      <tr>
+        <td>Recreate Out Directories Succeeded</td>
+        <td align="right">Finished in 0 seconds</td>
+      </tr>
+    </table>
+  </dt>
+  <dd>
+    <p></p>
+  </dd>
+</dl>
+<dl class="task succeeded">
+  <dt>
+    <table>
+      <tr>
+        <td>Compile Succeeded</td>
+        <td align="right">Finished in 2 seconds</td>
+      </tr>
+    </table>
+  </dt>
+  <dd>
+    <p></p>
+    <h3>Files</h3>
+    <ul class="files">
+      <li>
+        <a href="compile/BlackJackSimulator.log">BlackJackSimulator.log</a>
+      </li>
+      <li>
+        <a href="compile/Domain.log">Domain.log</a>
+      </li>
+      <li>
+        <a href="compile/Domain.Test.log">Domain.Test.log</a>
+      </li>
+    </ul>
+  </dd>
+</dl>
+<dl class="task succeeded">
+  <dt>
+    <table>
+      <tr>
+        <td>Coverage Succeeded</td>
+        <td align="right">Finished in 2 seconds</td>
+      </tr>
+    </table>
+  </dt>
+  <dd>
+    <p>Coverage: 31.16883%; Loc: 738; Classes: 22; Functions: 122</p>
+    <h3>Files</h3>
+    <ul class="files">
+      <li>
+        <a href="coverage/coverage_report.html">coverage_report.html</a>
+      </li>
+      <li>
+        <a href="coverage/coverage_report.xml">coverage_report.xml</a>
+      </li>
+      <li>
+        <a href="coverage/module_summary.xml">module_summary.xml</a>
+      </li>
+      <li>
+        <a href="coverage/coverage.log">coverage.log</a>
+      </li>
+    </ul>
+  </dd>
+</dl>
+</body></html>

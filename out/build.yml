@@ -1,0 +1,34 @@
+--- 
+:started_at: 2008-09-25 17:01:45.037000 -05:00
+:status_label: succeeded
+:summary: ""
+:artifacts: []
+
+:running_time: 4
+:tasks: 
+- :started_at: 2008-09-25 17:01:45.037000 -05:00
+  :status_label: succeeded
+  :summary: ""
+  :artifacts: []
+
+  :label: recreate_out_directories
+  :running_time: 0
+- :started_at: 2008-09-25 17:01:45.131000 -05:00
+  :status_label: succeeded
+  :summary: ""
+  :artifacts: 
+  - C:/BlackJackSimulator/BlackJackSimulator/out/compile/BlackJackSimulator.log
+  - C:/BlackJackSimulator/BlackJackSimulator/out/compile/Domain.log
+  - C:/BlackJackSimulator/BlackJackSimulator/out/compile/Domain.Test.log
+  :label: compile
+  :running_time: 2
+- :started_at: 2008-09-25 17:01:47.235000 -05:00
+  :status_label: succeeded
+  :summary: "Coverage: 31.16883%; Loc: 738; Classes: 22; Functions: 122"
+  :artifacts: 
+  - C:/BlackJackSimulator/BlackJackSimulator/out/coverage/coverage_report.html
+  - C:/BlackJackSimulator/BlackJackSimulator/out/coverage/coverage_report.xml
+  - C:/BlackJackSimulator/BlackJackSimulator/out/coverage/module_summary.xml
+  - C:/BlackJackSimulator/BlackJackSimulator/out/coverage/coverage.log
+  :label: coverage
+  :running_time: 2

@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="coverage.xsl" type="text/xsl"?>
+<!-- saved from url=(0022)http://www.ncover.org/ -->
+<coverage profilerVersion="1.5.8 Beta" driverVersion="1.5.8.0" startTime="2008-09-25T17:01:47.7343379-05:00" measureTime="2008-09-25T17:01:48.6539119-05:00">
+  <module moduleId="22" name="C:\BlackJackSimulator\BlackJackSimulator\Domain.Test\bin\Debug\Domain.dll" assembly="Domain" assemblyIdentity="Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, processorArchitecture=MSIL">
+    <method name=".cctor" excluded="false" instrumented="false" class="Domain.BasicStrategyDecisionMaker">
+      <seqpnt visitcount="0" line="12" column="9" endline="12" endcolumn="101" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Domain.BasicStrategyDecisionMaker">
+      <seqpnt visitcount="0" line="14" column="9" endline="14" endcolumn="60" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="15" column="9" endline="15" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="16" column="13" endline="16" endcolumn="28" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="17" column="9" endline="17" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+    </method>
+    <method name="DecidePlay" excluded="false" instrumented="false" class="Domain.BasicStrategyDecisionMaker">
+      <seqpnt visitcount="0" line="20" column="9" endline="20" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="21" column="13" endline="21" endcolumn="57" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="23" column="13" endline="23" endcolumn="63" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="24" column="13" endline="24" endcolumn="20" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="24" column="35" endline="24" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="24" column="22" endline="24" endcolumn="31" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="25" column="13" endline="25" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="26" column="17" endline="26" endcolumn="59" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="27" column="13" endline="27" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="24" column="32" endline="24" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="29" column="13" endline="29" endcolumn="85" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="31" column="13" endline="31" endcolumn="92" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="33" column="13" endline="39" endcolumn="27" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="41" column="13" endline="41" endcolumn="29" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="42" column="9" endline="42" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyDecisionMaker.cs" />
+    </method>
+    <method name="GetInstance" excluded="false" instrumented="false" class="Domain.BasicStrategyFactory">
+      <seqpnt visitcount="0" line="13" column="9" endline="13" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyFactory.cs" />
+      <seqpnt visitcount="0" line="14" column="13" endline="14" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyFactory.cs" />
+      <seqpnt visitcount="0" line="15" column="13" endline="15" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyFactory.cs" />
+      <seqpnt visitcount="0" line="16" column="17" endline="16" endcolumn="52" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyFactory.cs" />
+      <seqpnt visitcount="0" line="19" column="13" endline="19" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyFactory.cs" />
+      <seqpnt visitcount="0" line="20" column="17" endline="20" endcolumn="53" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyFactory.cs" />
+      <seqpnt visitcount="0" line="22" column="9" endline="22" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyFactory.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Domain.BasicStrategyPlayer">
+      <seqpnt visitcount="0" line="12" column="9" endline="13" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyPlayer.cs" />
+      <seqpnt visitcount="0" line="14" column="9" endline="14" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyPlayer.cs" />
+      <seqpnt visitcount="0" line="14" column="11" endline="14" endcolumn="12" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyPlayer.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Domain.BasicStrategyPlayer">
+      <seqpnt visitcount="0" line="16" column="9" endline="17" endcolumn="25" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyPlayer.cs" />
+      <seqpnt visitcount="0" line="18" column="9" endline="18" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyPlayer.cs" />
+      <seqpnt visitcount="0" line="19" column="13" endline="19" endcolumn="82" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyPlayer.cs" />
+      <seqpnt visitcount="0" line="20" column="9" endline="20" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyPlayer.cs" />
+    </method>
+    <method name="MakeDecision" excluded="false" instrumented="false" class="Domain.BasicStrategyPlayer">
+      <seqpnt visitcount="0" line="24" column="9" endline="24" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyPlayer.cs" />
+      <seqpnt visitcount="0" line="25" column="13" endline="25" endcolumn="64" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyPlayer.cs" />
+      <seqpnt visitcount="0" line="26" column="9" endline="26" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\BasicStrategyPlayer.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="true" class="Domain.Card">
+      <seqpnt visitcount="71" line="14" column="9" endline="14" endcolumn="50" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="71" line="16" column="13" endline="16" endcolumn="25" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="71" line="17" column="13" endline="17" endcolumn="25" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="71" line="18" column="13" endline="18" endcolumn="48" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="71" line="19" column="13" endline="19" endcolumn="45" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="27" line="21" column="17" endline="21" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="71" line="23" column="13" endline="23" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="8" line="25" column="17" endline="25" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="71" line="28" column="9" endline="28" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+    </method>
+    <method name="get_Rank" excluded="false" instrumented="true" class="Domain.Card">
+      <seqpnt visitcount="26" line="32" column="19" endline="32" endcolumn="32" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="26" line="32" column="33" endline="32" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+    </method>
+    <method name="set_Rank" excluded="false" instrumented="true" class="Domain.Card">
+      <seqpnt visitcount="71" line="33" column="19" endline="33" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="71" line="33" column="34" endline="33" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+    </method>
+    <method name="get_Suit" excluded="false" instrumented="true" class="Domain.Card">
+      <seqpnt visitcount="15" line="38" column="19" endline="38" endcolumn="32" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="15" line="38" column="33" endline="38" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+    </method>
+    <method name="set_Suit" excluded="false" instrumented="true" class="Domain.Card">
+      <seqpnt visitcount="71" line="39" column="19" endline="39" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="71" line="39" column="34" endline="39" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+    </method>
+    <method name="get_TrueValue" excluded="false" instrumented="true" class="Domain.Card">
+      <seqpnt visitcount="113" line="44" column="19" endline="44" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="113" line="44" column="38" endline="44" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+    </method>
+    <method name="set_TrueValue" excluded="false" instrumented="true" class="Domain.Card">
+      <seqpnt visitcount="4" line="45" column="19" endline="45" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="4" line="45" column="39" endline="45" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+    </method>
+    <method name="ToString" excluded="false" instrumented="true" class="Domain.Card">
+      <seqpnt visitcount="15" line="50" column="13" endline="50" endcolumn="60" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+      <seqpnt visitcount="15" line="51" column="9" endline="51" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Card.cs" />
+    </method>
+    <method name=".cctor" excluded="false" instrumented="false" class="Domain.CardCounterDecisionMaker">
+      <seqpnt visitcount="0" line="12" column="9" endline="12" endcolumn="99" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Domain.CardCounterDecisionMaker">
+      <seqpnt visitcount="0" line="14" column="9" endline="14" endcolumn="58" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="15" column="9" endline="15" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="16" column="13" endline="16" endcolumn="28" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="17" column="9" endline="17" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+    </method>
+    <method name="DecidePlay" excluded="false" instrumented="false" class="Domain.CardCounterDecisionMaker">
+      <seqpnt visitcount="0" line="20" column="9" endline="20" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="21" column="13" endline="21" endcolumn="57" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="23" column="13" endline="23" endcolumn="63" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="24" column="13" endline="24" endcolumn="20" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="24" column="35" endline="24" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="24" column="22" endline="24" endcolumn="31" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="25" column="13" endline="25" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="26" column="17" endline="26" endcolumn="59" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="27" column="13" endline="27" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="24" column="32" endline="24" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="29" column="13" endline="29" endcolumn="85" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="31" column="13" endline="31" endcolumn="105" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="34" column="13" endline="34" endcolumn="68" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="36" column="13" endline="44" endcolumn="36" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="46" column="13" endline="46" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+      <seqpnt visitcount="0" line="47" column="9" endline="47" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterDecisionMaker.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Domain.CardCounterPlayer">
+      <seqpnt visitcount="0" line="13" column="9" endline="14" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="15" column="9" endline="15" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="15" column="11" endline="15" endcolumn="12" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Domain.CardCounterPlayer">
+      <seqpnt visitcount="0" line="17" column="9" endline="18" endcolumn="25" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="19" column="9" endline="19" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="20" column="13" endline="20" endcolumn="80" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="21" column="13" endline="21" endcolumn="28" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="22" column="9" endline="22" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+    </method>
+    <method name="MakeDecision" excluded="false" instrumented="false" class="Domain.CardCounterPlayer">
+      <seqpnt visitcount="0" line="26" column="9" endline="26" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="27" column="13" endline="27" endcolumn="50" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="28" column="13" endline="28" endcolumn="75" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="29" column="9" endline="29" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+    </method>
+    <method name="DetermineCardCount" excluded="false" instrumented="false" class="Domain.CardCounterPlayer">
+      <seqpnt visitcount="0" line="32" column="9" endline="32" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="41" column="13" endline="41" endcolumn="20" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="41" column="35" endline="41" endcolumn="64" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="41" column="22" endline="41" endcolumn="31" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="42" column="13" endline="42" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="43" column="17" endline="43" endcolumn="71" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="44" column="17" endline="44" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="45" column="21" endline="45" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="46" column="17" endline="46" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="48" column="17" endline="48" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="49" column="21" endline="49" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="50" column="17" endline="50" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="51" column="13" endline="51" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="41" column="32" endline="41" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="53" column="13" endline="53" endcolumn="22" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+      <seqpnt visitcount="0" line="54" column="9" endline="54" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\CardCounterPlayer.cs" />
+    </method>
+    <method name=".cctor" excluded="false" instrumented="true" class="Domain.DealerDecisionMaker">
+      <seqpnt visitcount="1" line="11" column="9" endline="11" endcolumn="94" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="true" class="Domain.DealerDecisionMaker">
+      <seqpnt visitcount="12" line="14" column="9" endline="14" endcolumn="53" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="12" line="16" column="13" endline="16" endcolumn="28" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="12" line="17" column="9" endline="17" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+    </method>
+    <method name="DecidePlay" excluded="false" instrumented="true" class="Domain.DealerDecisionMaker">
+      <seqpnt visitcount="6" line="23" column="13" endline="23" endcolumn="57" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="6" line="25" column="13" endline="25" endcolumn="63" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="6" line="26" column="35" endline="26" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="12" line="26" column="22" endline="26" endcolumn="31" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="12" line="28" column="17" endline="28" endcolumn="59" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="18" line="26" column="32" endline="26" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="6" line="31" column="13" endline="31" endcolumn="41" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="3" line="34" column="17" endline="34" endcolumn="100" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="2" line="36" column="21" endline="36" endcolumn="49" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="1" line="40" column="21" endline="40" endcolumn="51" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="3" line="45" column="17" endline="45" endcolumn="45" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="1" line="47" column="21" endline="47" endcolumn="49" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="2" line="51" column="21" endline="51" endcolumn="51" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="6" line="55" column="13" endline="60" endcolumn="27" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="6" line="62" column="13" endline="62" endcolumn="29" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+      <seqpnt visitcount="6" line="63" column="9" endline="63" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerDecisionMaker.cs" />
+    </method>
+    <method name=".cctor" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="1" line="14" column="9" endline="14" endcolumn="87" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="8" line="18" column="9" endline="18" endcolumn="53" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="8" line="20" column="13" endline="20" endcolumn="75" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="8" line="21" column="9" endline="21" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name="MakeDecision" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="0" line="25" column="13" endline="25" endcolumn="64" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="26" column="9" endline="26" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name="ShuffleDeck" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="0" line="30" column="13" endline="30" endcolumn="43" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="31" column="9" endline="31" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name="DealCardToPlayer" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="0" line="35" column="13" endline="35" endcolumn="52" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="37" column="13" endline="37" endcolumn="65" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="39" column="13" endline="39" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="41" column="13" endline="41" endcolumn="50" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="46" column="13" endline="46" endcolumn="54" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="48" column="17" endline="48" endcolumn="78" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="49" column="42" endline="49" endcolumn="71" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="49" column="26" endline="49" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="51" column="21" endline="51" endcolumn="60" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="49" column="39" endline="49" endcolumn="41" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="54" column="17" endline="54" endcolumn="47" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="56" column="17" endline="56" endcolumn="55" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="58" column="17" endline="58" endcolumn="61" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="59" column="45" endline="59" endcolumn="71" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="59" column="26" endline="59" endcolumn="41" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="61" column="21" endline="61" endcolumn="56" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="59" column="42" endline="59" endcolumn="44" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="64" column="9" endline="64" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name="Deal" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="0" line="68" column="18" endline="68" endcolumn="28" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="70" column="44" endline="70" endcolumn="66" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="70" column="26" endline="70" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="72" column="21" endline="72" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="70" column="41" endline="70" endcolumn="43" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="68" column="50" endline="68" endcolumn="53" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="68" column="29" endline="68" endcolumn="48" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="75" column="9" endline="75" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name="get_UpCard" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="0" line="81" column="17" endline="81" endcolumn="48" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="83" column="21" endline="83" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="86" column="17" endline="86" endcolumn="43" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="87" column="13" endline="87" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name="PromptPlayerForDecision" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="0" line="93" column="13" endline="93" endcolumn="70" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="95" column="13" endline="95" endcolumn="53" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="96" column="9" endline="96" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name="HandlePlayerDecision" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="0" line="100" column="13" endline="100" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="103" column="21" endline="103" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="104" column="21" endline="104" endcolumn="27" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="106" column="21" endline="106" endcolumn="27" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="108" column="21" endline="108" endcolumn="27" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="111" column="21" endline="111" endcolumn="68" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="113" column="21" endline="113" endcolumn="47" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="116" column="21" endline="116" endcolumn="64" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="119" column="21" endline="119" endcolumn="57" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="121" column="26" endline="121" endcolumn="31" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="123" column="25" endline="123" endcolumn="68" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="125" column="25" endline="125" endcolumn="85" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="127" column="29" endline="127" endcolumn="59" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="128" column="29" endline="128" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="121" column="48" endline="121" endcolumn="51" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="121" column="33" endline="121" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="132" column="21" endline="132" endcolumn="48" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="135" column="25" endline="135" endcolumn="59" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="136" column="25" endline="136" endcolumn="105" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="137" column="25" endline="137" endcolumn="78" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="138" column="25" endline="138" endcolumn="58" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="140" column="25" endline="140" endcolumn="63" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="142" column="25" endline="142" endcolumn="60" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="144" column="25" endline="144" endcolumn="69" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="146" column="25" endline="146" endcolumn="54" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="148" column="25" endline="148" endcolumn="62" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="150" column="25" endline="150" endcolumn="75" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="153" column="21" endline="153" endcolumn="27" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="155" column="43" endline="155" endcolumn="60" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="155" column="30" endline="155" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="157" column="25" endline="157" endcolumn="65" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="158" column="25" endline="158" endcolumn="65" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="155" column="40" endline="155" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="161" column="21" endline="161" endcolumn="47" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="162" column="21" endline="162" endcolumn="66" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="164" column="21" endline="164" endcolumn="27" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="166" column="21" endline="166" endcolumn="55" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="170" column="9" endline="170" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name="DetermineOutcome" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="0" line="174" column="45" endline="174" endcolumn="64" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="174" column="22" endline="174" endcolumn="41" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="177" column="17" endline="177" endcolumn="47" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="178" column="17" endline="178" endcolumn="71" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="179" column="17" endline="179" endcolumn="75" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="180" column="17" endline="180" endcolumn="75" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="181" column="17" endline="181" endcolumn="83" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="174" column="42" endline="174" endcolumn="44" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="184" column="13" endline="184" endcolumn="107" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="186" column="17" endline="186" endcolumn="57" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="187" column="17" endline="187" endcolumn="44" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="188" column="17" endline="188" endcolumn="24" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="191" column="13" endline="191" endcolumn="56" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="193" column="17" endline="193" endcolumn="111" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="195" column="21" endline="195" endcolumn="60" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="196" column="21" endline="196" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="199" column="17" endline="199" endcolumn="24" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="202" column="13" endline="202" endcolumn="56" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="204" column="17" endline="204" endcolumn="58" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="206" column="21" endline="206" endcolumn="61" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="207" column="21" endline="207" endcolumn="48" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="210" column="17" endline="210" endcolumn="57" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="212" column="21" endline="212" endcolumn="60" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="213" column="21" endline="213" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="216" column="17" endline="216" endcolumn="57" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="218" column="21" endline="218" endcolumn="61" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="219" column="21" endline="219" endcolumn="48" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="222" column="17" endline="222" endcolumn="24" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="225" column="13" endline="225" endcolumn="20" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="226" column="9" endline="226" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name="DeterminePayout" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="0" line="237" column="13" endline="237" endcolumn="20" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="238" column="9" endline="238" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name="get_LastPlayerDealtTo" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="0" line="242" column="19" endline="242" endcolumn="45" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="242" column="46" endline="242" endcolumn="47" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name="set_LastPlayerDealtTo" excluded="false" instrumented="true" class="Domain.DealerPlayer">
+      <seqpnt visitcount="0" line="243" column="19" endline="243" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+      <seqpnt visitcount="0" line="243" column="47" endline="243" endcolumn="48" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DealerPlayer.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Domain.DecisionNotFoundException">
+      <seqpnt visitcount="0" line="10" column="9" endline="10" endcolumn="73" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DecisionNotFoundException.cs" />
+      <seqpnt visitcount="0" line="10" column="74" endline="10" endcolumn="75" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DecisionNotFoundException.cs" />
+      <seqpnt visitcount="0" line="10" column="76" endline="10" endcolumn="77" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DecisionNotFoundException.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Domain.DecisionNotFoundException">
+      <seqpnt visitcount="0" line="12" column="9" endline="12" endcolumn="73" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DecisionNotFoundException.cs" />
+      <seqpnt visitcount="0" line="12" column="74" endline="12" endcolumn="75" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DecisionNotFoundException.cs" />
+      <seqpnt visitcount="0" line="12" column="76" endline="12" endcolumn="77" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\DecisionNotFoundException.cs" />
+    </method>
+    <method name=".cctor" excluded="false" instrumented="true" class="Domain.Deck">
+      <seqpnt visitcount="1" line="12" column="9" endline="12" endcolumn="79" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="true" class="Domain.Deck">
+      <seqpnt visitcount="1" line="14" column="9" endline="14" endcolumn="22" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="1" line="16" column="13" endline="16" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="1" line="18" column="37" endline="18" endcolumn="68" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="13" line="18" column="22" endline="18" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="13" line="20" column="41" endline="20" endcolumn="72" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="52" line="20" column="26" endline="20" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="52" line="23" column="21" endline="24" endcolumn="57" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="52" line="26" column="21" endline="26" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="65" line="20" column="38" endline="20" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="14" line="18" column="34" endline="18" endcolumn="36" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="1" line="30" column="9" endline="30" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+    </method>
+    <method name="Draw" excluded="false" instrumented="true" class="Domain.Deck">
+      <seqpnt visitcount="0" line="34" column="13" endline="34" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="36" column="17" endline="36" endcolumn="86" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="39" column="13" endline="39" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="40" column="13" endline="40" endcolumn="32" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="42" column="13" endline="42" endcolumn="25" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="43" column="9" endline="43" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+    </method>
+    <method name="Shuffle" excluded="false" instrumented="true" class="Domain.Deck">
+      <seqpnt visitcount="0" line="47" column="13" endline="47" endcolumn="49" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="49" column="13" endline="49" endcolumn="57" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="50" column="13" endline="50" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="52" column="13" endline="52" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="54" column="18" endline="54" endcolumn="28" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="56" column="17" endline="56" endcolumn="64" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="58" column="17" endline="58" endcolumn="62" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="60" column="21" endline="60" endcolumn="56" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="63" column="17" endline="63" endcolumn="55" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="64" column="17" endline="64" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="54" column="48" endline="54" endcolumn="51" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="54" column="29" endline="54" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="67" column="13" endline="67" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="69" column="9" endline="69" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+    </method>
+    <method name="get_Cards" excluded="false" instrumented="true" class="Domain.Deck">
+      <seqpnt visitcount="0" line="73" column="19" endline="73" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+      <seqpnt visitcount="0" line="73" column="34" endline="73" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Deck.cs" />
+    </method>
+    <method name="Parse" excluded="false" instrumented="true" class="Domain.EnumUtil`1">
+      <seqpnt visitcount="104" line="12" column="13" endline="12" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\EnumUtil.cs" />
+      <seqpnt visitcount="104" line="13" column="9" endline="13" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\EnumUtil.cs" />
+    </method>
+    <method name="Parse" excluded="false" instrumented="true" class="Domain.EnumUtil`1">
+      <seqpnt visitcount="104" line="17" column="13" endline="17" endcolumn="64" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\EnumUtil.cs" />
+      <seqpnt visitcount="104" line="18" column="9" endline="18" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\EnumUtil.cs" />
+    </method>
+    <method name="Parse" excluded="false" instrumented="true" class="Domain.EnumUtil`1">
+      <seqpnt visitcount="0" line="22" column="13" endline="22" endcolumn="44" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\EnumUtil.cs" />
+      <seqpnt visitcount="0" line="23" column="9" endline="23" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\EnumUtil.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Domain.FourDeckBasicStrategy">
+      <seqpnt visitcount="0" line="14" column="9" endline="14" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="15" column="9" endline="15" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="16" column="13" endline="16" endcolumn="50" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="17" column="13" endline="17" endcolumn="52" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="18" column="9" endline="18" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+    </method>
+    <method name="GetDecision" excluded="false" instrumented="false" class="Domain.FourDeckBasicStrategy">
+      <seqpnt visitcount="0" line="21" column="9" endline="21" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="22" column="13" endline="22" endcolumn="45" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="23" column="13" endline="23" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="24" column="17" endline="24" endcolumn="41" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="27" column="13" endline="27" endcolumn="20" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="27" column="43" endline="27" endcolumn="56" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="27" column="22" endline="27" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="28" column="13" endline="28" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="29" column="17" endline="29" endcolumn="255" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="30" column="17" endline="30" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="31" column="21" endline="31" endcolumn="60" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="32" column="21" endline="32" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="34" column="13" endline="34" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="27" column="40" endline="27" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="36" column="13" endline="36" endcolumn="20" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="36" column="44" endline="36" endcolumn="58" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="36" column="22" endline="36" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="37" column="13" endline="37" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="38" column="17" endline="38" endcolumn="100" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="39" column="17" endline="39" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="40" column="21" endline="40" endcolumn="60" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="41" column="21" endline="41" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="43" column="13" endline="43" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="36" column="41" endline="36" endcolumn="43" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="45" column="13" endline="45" endcolumn="222" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="46" column="8" endline="46" endcolumn="9" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+    </method>
+    <method name="CreateStrategyCard" excluded="false" instrumented="false" class="Domain.FourDeckBasicStrategy">
+      <seqpnt visitcount="0" line="83" column="9" endline="83" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="85" column="13" endline="212" endcolumn="15" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="232" column="9" endline="232" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+    </method>
+    <method name="CreateStrategyCard2" excluded="false" instrumented="false" class="Domain.FourDeckBasicStrategy">
+      <seqpnt visitcount="0" line="235" column="9" endline="235" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="237" column="13" endline="364" endcolumn="15" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="504" column="9" endline="504" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Domain.FourDeckBasicStrategy+StrategyCell">
+      <seqpnt visitcount="0" line="57" column="13" endline="57" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="58" column="17" endline="58" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="59" column="17" endline="59" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="60" column="17" endline="60" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="61" column="17" endline="61" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="62" column="17" endline="62" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="63" column="13" endline="63" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Domain.FourDeckBasicStrategy+StrategyCell2">
+      <seqpnt visitcount="0" line="74" column="13" endline="74" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="75" column="17" endline="75" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="76" column="17" endline="76" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="77" column="17" endline="77" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+      <seqpnt visitcount="0" line="78" column="13" endline="78" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\FourDeckBasicStrategy.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="true" class="Domain.Hand">
+      <seqpnt visitcount="9" line="12" column="9" endline="12" endcolumn="22" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="9" line="14" column="13" endline="14" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="9" line="15" column="9" endline="15" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+    </method>
+    <method name="get_Cards" excluded="false" instrumented="true" class="Domain.Hand">
+      <seqpnt visitcount="31" line="19" column="19" endline="19" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="31" line="19" column="34" endline="19" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+    </method>
+    <method name="get_Value" excluded="false" instrumented="true" class="Domain.Hand">
+      <seqpnt visitcount="58" line="27" column="17" endline="27" endcolumn="31" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="58" line="28" column="39" endline="28" endcolumn="45" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="107" line="28" column="26" endline="28" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="107" line="30" column="21" endline="30" endcolumn="45" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="165" line="28" column="36" endline="28" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="58" line="33" column="17" endline="33" endcolumn="30" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="58" line="34" column="13" endline="34" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+    </method>
+    <method name="Add" excluded="false" instrumented="true" class="Domain.Hand">
+      <seqpnt visitcount="14" line="39" column="13" endline="39" endcolumn="30" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="14" line="40" column="9" endline="40" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+    </method>
+    <method name="Clear" excluded="false" instrumented="true" class="Domain.Hand">
+      <seqpnt visitcount="1" line="44" column="13" endline="44" endcolumn="28" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="1" line="45" column="9" endline="45" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+    </method>
+    <method name="get_HasSoftAce" excluded="false" instrumented="true" class="Domain.Hand">
+      <seqpnt visitcount="3" line="51" column="39" endline="51" endcolumn="45" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="4" line="51" column="26" endline="51" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="4" line="53" column="21" endline="53" endcolumn="75" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="2" line="55" column="25" endline="55" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="5" line="51" column="36" endline="51" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="1" line="59" column="17" endline="59" endcolumn="30" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="3" line="60" column="13" endline="60" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+    </method>
+    <method name="ConvertSoftAceToHard" excluded="false" instrumented="true" class="Domain.Hand">
+      <seqpnt visitcount="1" line="68" column="35" endline="68" endcolumn="41" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="1" line="68" column="22" endline="68" endcolumn="31" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="1" line="70" column="17" endline="70" endcolumn="71" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="1" line="72" column="21" endline="72" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="1" line="73" column="21" endline="73" endcolumn="28" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="1" line="68" column="32" endline="68" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+      <seqpnt visitcount="1" line="76" column="9" endline="76" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Hand.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="true" class="Domain.MimicDealerPlayer">
+      <seqpnt visitcount="1" line="12" column="9" endline="13" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\MimicDealerPlayer.cs" />
+      <seqpnt visitcount="1" line="14" column="11" endline="14" endcolumn="12" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\MimicDealerPlayer.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="true" class="Domain.MimicDealerPlayer">
+      <seqpnt visitcount="1" line="16" column="9" endline="17" endcolumn="25" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\MimicDealerPlayer.cs" />
+      <seqpnt visitcount="1" line="19" column="13" endline="19" endcolumn="75" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\MimicDealerPlayer.cs" />
+      <seqpnt visitcount="1" line="20" column="9" endline="20" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\MimicDealerPlayer.cs" />
+    </method>
+    <method name="MakeDecision" excluded="false" instrumented="true" class="Domain.MimicDealerPlayer">
+      <seqpnt visitcount="0" line="24" column="13" endline="24" endcolumn="64" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\MimicDealerPlayer.cs" />
+      <seqpnt visitcount="0" line="25" column="9" endline="25" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\MimicDealerPlayer.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="9" line="16" column="9" endline="16" endcolumn="74" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="9" line="23" column="9" endline="23" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="9" line="25" column="13" endline="25" endcolumn="26" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="9" line="26" column="13" endline="26" endcolumn="32" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="9" line="27" column="13" endline="27" endcolumn="47" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="9" line="28" column="13" endline="28" endcolumn="44" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="9" line="29" column="13" endline="29" endcolumn="49" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="9" line="30" column="13" endline="30" endcolumn="36" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="9" line="31" column="9" endline="31" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="get_SplitPlayers" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="37" column="19" endline="37" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="37" column="41" endline="37" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="ReceiveCard" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="14" line="42" column="13" endline="42" endcolumn="29" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="14" line="44" column="13" endline="44" endcolumn="68" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="3" line="46" column="17" endline="46" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="14" line="49" column="13" endline="49" endcolumn="30" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="1" line="51" column="17" endline="51" endcolumn="54" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="1" line="52" column="17" endline="52" endcolumn="73" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="1" line="53" column="17" endline="53" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="1" line="54" column="17" endline="54" endcolumn="24" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="1" line="59" column="17" endline="59" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="14" line="57" column="13" endline="57" endcolumn="57" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="13" line="62" column="13" endline="62" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="64" column="17" endline="64" endcolumn="51" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="65" column="17" endline="65" endcolumn="57" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="14" line="67" column="9" endline="67" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="FlushHand" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="1" line="72" column="13" endline="72" endcolumn="27" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="1" line="73" column="9" endline="73" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="RemoveCard" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="77" column="13" endline="77" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="78" column="9" endline="78" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="ToString" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="82" column="13" endline="82" endcolumn="48" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="83" column="9" endline="83" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="get_Hand" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="44" line="87" column="19" endline="87" endcolumn="32" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="44" line="87" column="33" endline="87" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="get_HasBlackJack" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="16" line="92" column="19" endline="92" endcolumn="70" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="16" line="92" column="71" endline="92" endcolumn="72" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="get_Status" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="97" column="19" endline="97" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="97" column="35" endline="97" endcolumn="36" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="set_Status" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="98" column="19" endline="98" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="98" column="36" endline="98" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="get_Outcome" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="103" column="19" endline="103" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="103" column="36" endline="103" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="set_Outcome" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="104" column="19" endline="104" endcolumn="36" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="104" column="37" endline="104" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="get_Statistics" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="1" line="109" column="19" endline="109" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="1" line="109" column="39" endline="109" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="set_Statistics" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="110" column="19" endline="110" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="110" column="40" endline="110" endcolumn="41" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="get_Name" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="115" column="19" endline="115" endcolumn="32" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="115" column="33" endline="115" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="set_Name" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="116" column="19" endline="116" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="116" column="34" endline="116" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="get_IsSplitPlayer" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="121" column="19" endline="121" endcolumn="41" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="121" column="42" endline="121" endcolumn="43" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="set_IsSplitPlayer" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="122" column="19" endline="122" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="122" column="43" endline="122" endcolumn="44" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="get_BankRoll" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="127" column="19" endline="127" endcolumn="36" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="127" column="37" endline="127" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="set_BankRoll" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="128" column="19" endline="128" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="128" column="38" endline="128" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="get_Bet" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="133" column="19" endline="133" endcolumn="31" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="133" column="32" endline="133" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name="set_Bet" excluded="false" instrumented="true" class="Domain.Player">
+      <seqpnt visitcount="0" line="134" column="19" endline="134" endcolumn="32" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+      <seqpnt visitcount="0" line="134" column="33" endline="134" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Player.cs" />
+    </method>
+    <method name=".cctor" excluded="false" instrumented="true" class="Domain.Singleton`1">
+      <seqpnt visitcount="2" line="13" column="9" endline="13" endcolumn="56" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Singleton.cs" />
+    </method>
+    <method name="GetInstance" excluded="false" instrumented="true" class="Domain.Singleton`1">
+      <seqpnt visitcount="16" line="20" column="13" endline="20" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Singleton.cs" />
+      <seqpnt visitcount="2" line="22" column="17" endline="22" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Singleton.cs" />
+      <seqpnt visitcount="2" line="24" column="21" endline="24" endcolumn="43" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Singleton.cs" />
+      <seqpnt visitcount="2" line="26" column="25" endline="26" endcolumn="52" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Singleton.cs" />
+      <seqpnt visitcount="2" line="27" column="25" endline="27" endcolumn="65" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Singleton.cs" />
+      <seqpnt visitcount="2" line="28" column="25" endline="28" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Singleton.cs" />
+      <seqpnt visitcount="16" line="32" column="13" endline="32" endcolumn="30" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Singleton.cs" />
+      <seqpnt visitcount="16" line="33" column="9" endline="33" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Singleton.cs" />
+    </method>
+    <method name="get_Wins" excluded="false" instrumented="true" class="Domain.Statistics">
+      <seqpnt visitcount="0" line="21" column="17" endline="21" endcolumn="30" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+      <seqpnt visitcount="0" line="22" column="13" endline="22" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+    </method>
+    <method name="set_Wins" excluded="false" instrumented="true" class="Domain.Statistics">
+      <seqpnt visitcount="0" line="25" column="17" endline="25" endcolumn="31" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+      <seqpnt visitcount="0" line="26" column="13" endline="26" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+    </method>
+    <method name="get_Losses" excluded="false" instrumented="true" class="Domain.Statistics">
+      <seqpnt visitcount="0" line="33" column="17" endline="33" endcolumn="32" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+      <seqpnt visitcount="0" line="34" column="13" endline="34" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+    </method>
+    <method name="set_Losses" excluded="false" instrumented="true" class="Domain.Statistics">
+      <seqpnt visitcount="0" line="37" column="17" endline="37" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+      <seqpnt visitcount="0" line="38" column="13" endline="38" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+    </method>
+    <method name="get_Pushes" excluded="false" instrumented="true" class="Domain.Statistics">
+      <seqpnt visitcount="0" line="45" column="17" endline="45" endcolumn="32" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+      <seqpnt visitcount="0" line="46" column="13" endline="46" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+    </method>
+    <method name="set_Pushes" excluded="false" instrumented="true" class="Domain.Statistics">
+      <seqpnt visitcount="0" line="49" column="17" endline="49" endcolumn="33" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+      <seqpnt visitcount="0" line="50" column="13" endline="50" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+    </method>
+    <method name="get_BlackJacks" excluded="false" instrumented="true" class="Domain.Statistics">
+      <seqpnt visitcount="1" line="57" column="17" endline="57" endcolumn="36" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+      <seqpnt visitcount="1" line="58" column="13" endline="58" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+    </method>
+    <method name="set_BlackJacks" excluded="false" instrumented="true" class="Domain.Statistics">
+      <seqpnt visitcount="1" line="61" column="17" endline="61" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+      <seqpnt visitcount="1" line="62" column="13" endline="62" endcolumn="14" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+    </method>
+    <method name="ToString" excluded="false" instrumented="true" class="Domain.Statistics">
+      <seqpnt visitcount="0" line="67" column="13" endline="71" endcolumn="29" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+      <seqpnt visitcount="0" line="72" column="9" endline="72" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Statistics.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Domain.StrategyCell_Class">
+      <seqpnt visitcount="0" line="15" column="9" endline="15" endcolumn="101" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="16" column="9" endline="16" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="17" column="13" endline="17" endcolumn="36" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="18" column="13" endline="18" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="19" column="13" endline="19" endcolumn="36" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="20" column="13" endline="20" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="21" column="9" endline="21" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+    </method>
+    <method name="get_FirstCard" excluded="false" instrumented="false" class="Domain.StrategyCell_Class">
+      <seqpnt visitcount="0" line="26" column="17" endline="26" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="26" column="19" endline="26" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="26" column="38" endline="26" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+    </method>
+    <method name="set_FirstCard" excluded="false" instrumented="false" class="Domain.StrategyCell_Class">
+      <seqpnt visitcount="0" line="27" column="17" endline="27" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="27" column="19" endline="27" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="27" column="39" endline="27" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+    </method>
+    <method name="get_SecondCard" excluded="false" instrumented="false" class="Domain.StrategyCell_Class">
+      <seqpnt visitcount="0" line="32" column="17" endline="32" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="32" column="19" endline="32" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="32" column="39" endline="32" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+    </method>
+    <method name="set_SecondCard" excluded="false" instrumented="false" class="Domain.StrategyCell_Class">
+      <seqpnt visitcount="0" line="33" column="17" endline="33" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="33" column="19" endline="33" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="33" column="40" endline="33" endcolumn="41" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+    </method>
+    <method name="get_HandValue" excluded="false" instrumented="false" class="Domain.StrategyCell_Class">
+      <seqpnt visitcount="0" line="38" column="17" endline="38" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="38" column="19" endline="38" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="38" column="38" endline="38" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+    </method>
+    <method name="set_HandValue" excluded="false" instrumented="false" class="Domain.StrategyCell_Class">
+      <seqpnt visitcount="0" line="39" column="17" endline="39" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="39" column="19" endline="39" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="39" column="39" endline="39" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+    </method>
+    <method name="get_DealerUpCard" excluded="false" instrumented="false" class="Domain.StrategyCell_Class">
+      <seqpnt visitcount="0" line="44" column="17" endline="44" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="44" column="19" endline="44" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="44" column="41" endline="44" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+    </method>
+    <method name="set_DealerUpCard" excluded="false" instrumented="false" class="Domain.StrategyCell_Class">
+      <seqpnt visitcount="0" line="45" column="17" endline="45" endcolumn="18" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="45" column="19" endline="45" endcolumn="41" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+      <seqpnt visitcount="0" line="45" column="42" endline="45" endcolumn="43" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\StrategyCell.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="true" class="Domain.Table">
+      <seqpnt visitcount="1" line="14" column="9" endline="14" endcolumn="73" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="1" line="27" column="9" endline="27" endcolumn="24" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="1" line="29" column="13" endline="29" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="1" line="30" column="13" endline="30" endcolumn="44" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="1" line="31" column="13" endline="31" endcolumn="32" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="1" line="32" column="13" endline="32" endcolumn="48" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="1" line="33" column="13" endline="33" endcolumn="45" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="1" line="34" column="9" endline="34" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+    </method>
+    <method name="get_Instance" excluded="false" instrumented="true" class="Domain.Table">
+      <seqpnt visitcount="4" line="24" column="19" endline="24" endcolumn="89" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="4" line="24" column="90" endline="24" endcolumn="91" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+    </method>
+    <method name="&lt;get_Instance&gt;b__0" excluded="true" instrumented="false" class="Domain.Table">
+      <seqpnt visitcount="0" line="24" column="64" endline="24" endcolumn="65" excluded="true" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="0" line="24" column="66" endline="24" endcolumn="85" excluded="true" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+    </method>
+    <method name="AddPlayer" excluded="false" instrumented="true" class="Domain.Table">
+      <seqpnt visitcount="2" line="38" column="13" endline="38" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="2" line="40" column="13" endline="40" endcolumn="63" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="2" line="41" column="9" endline="41" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+    </method>
+    <method name="RemovePlayer" excluded="false" instrumented="true" class="Domain.Table">
+      <seqpnt visitcount="1" line="45" column="13" endline="45" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="1" line="47" column="13" endline="47" endcolumn="67" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="1" line="48" column="9" endline="48" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+    </method>
+    <method name="get_Players" excluded="false" instrumented="true" class="Domain.Table">
+      <seqpnt visitcount="4" line="52" column="19" endline="52" endcolumn="35" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="4" line="52" column="36" endline="52" endcolumn="37" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+    </method>
+    <method name="get_Deck" excluded="false" instrumented="true" class="Domain.Table">
+      <seqpnt visitcount="0" line="57" column="19" endline="57" endcolumn="32" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="0" line="57" column="33" endline="57" endcolumn="34" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+    </method>
+    <method name="get_DiscardedCards" excluded="false" instrumented="true" class="Domain.Table">
+      <seqpnt visitcount="0" line="62" column="19" endline="62" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="0" line="62" column="43" endline="62" endcolumn="44" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+    </method>
+    <method name="set_DiscardedCards" excluded="false" instrumented="true" class="Domain.Table">
+      <seqpnt visitcount="0" line="63" column="19" endline="63" endcolumn="43" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="0" line="63" column="44" endline="63" endcolumn="45" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+    </method>
+    <method name="get_CardsInPlay" excluded="false" instrumented="true" class="Domain.Table">
+      <seqpnt visitcount="0" line="68" column="19" endline="68" endcolumn="39" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="0" line="68" column="40" endline="68" endcolumn="41" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+    </method>
+    <method name="set_CardsInPlay" excluded="false" instrumented="true" class="Domain.Table">
+      <seqpnt visitcount="0" line="69" column="19" endline="69" endcolumn="40" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+      <seqpnt visitcount="0" line="69" column="41" endline="69" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\Table.cs" />
+    </method>
+    <method name="&lt;get_Instance&gt;b__0" excluded="true" instrumented="false" class="Domain.TableRules">
+      <seqpnt visitcount="0" line="15" column="69" endline="15" endcolumn="70" excluded="true" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+      <seqpnt visitcount="0" line="15" column="71" endline="15" endcolumn="95" excluded="true" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+    </method>
+    <method name="get_Instance" excluded="false" instrumented="true" class="Domain.TableRules">
+      <seqpnt visitcount="12" line="15" column="19" endline="15" endcolumn="99" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+      <seqpnt visitcount="12" line="15" column="100" endline="15" endcolumn="101" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="true" class="Domain.TableRules">
+      <seqpnt visitcount="1" line="18" column="9" endline="18" endcolumn="29" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+      <seqpnt visitcount="1" line="20" column="13" endline="20" endcolumn="32" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+      <seqpnt visitcount="1" line="21" column="13" endline="21" endcolumn="38" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+      <seqpnt visitcount="1" line="22" column="9" endline="22" endcolumn="10" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+    </method>
+    <method name="get_NumberOfDecks" excluded="false" instrumented="true" class="Domain.TableRules">
+      <seqpnt visitcount="0" line="26" column="19" endline="26" endcolumn="41" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+      <seqpnt visitcount="0" line="26" column="42" endline="26" endcolumn="43" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+    </method>
+    <method name="set_NumberOfDecks" excluded="false" instrumented="true" class="Domain.TableRules">
+      <seqpnt visitcount="0" line="27" column="19" endline="27" endcolumn="42" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+      <seqpnt visitcount="0" line="27" column="43" endline="27" endcolumn="44" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+    </method>
+    <method name="get_DealerHitsSoft17" excluded="false" instrumented="true" class="Domain.TableRules">
+      <seqpnt visitcount="6" line="32" column="19" endline="32" endcolumn="44" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+      <seqpnt visitcount="6" line="32" column="45" endline="32" endcolumn="46" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+    </method>
+    <method name="set_DealerHitsSoft17" excluded="false" instrumented="true" class="Domain.TableRules">
+      <seqpnt visitcount="6" line="33" column="19" endline="33" endcolumn="45" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+      <seqpnt visitcount="6" line="33" column="46" endline="33" endcolumn="47" excluded="false" document="c:\BlackJackSimulator\BlackJackSimulator\Domain\TableRules.cs" />
+    </method>
+  </module>
+</coverage>
