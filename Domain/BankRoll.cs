@@ -12,7 +12,7 @@ namespace Domain
 
         public BankRoll(Decimal value)
         {
-            Value = value;
+            Value = value;            
         }
 
         #region IBankRoll Members

@@ -11,6 +11,9 @@ namespace Domain
 
         public Decimal MakeBet()
         {
+
+
+            //test
             return 5.0m;
         }
 
