@@ -63,77 +63,61 @@ namespace BlackJackSimulator
                 //{
                 //    Log.DebugFormat("{0}", player);
                 //}
-
-                Log.DebugFormat("Resetting to original players...");
-                int playerListCount = Table.Instance.Players.Count;
-                for (int index = 0; index < playerListCount; index++)
+                
+                foreach (IPlayer player in Table.Instance.Players)
                 {
-                    IPlayer player = Table.Instance.Players[index];
-                    player.SplitPlayers.Clear();
-                    player.Outcome = PlayerOutcomeType.InProgress;
-                    player.Status = PlayerStatusType.Active;
-
-                    if (player.IsSplitPlayer)
-                    {
-                        Log.DebugFormat("Removing {0}", player);
-                        Table.Instance.Players.RemoveAt(index);
-                        index--;
-                        playerListCount--;
-                    }
-                }
-
-                if (Table.Instance.Players.Count != 4)
-                {
-                    throw new NotSupportedException("more than 4 players encountered");
+                    player.Hands.Clear();
+                    //todo: implement reset logic, there's prob more to do, reclaim cards etc ?
                 }
 
                 dealer.Deal();
 
-                if (dealer.HasBlackJack)
+                if (dealer.ActiveHand.HasBlackJack)
                 {
                     foreach (IPlayer player in Table.Instance.Players)
                     {
-                        if (player != dealer)
+                        foreach (Hand hand in player.Hands)
                         {
-                            dealer.DetermineOutcome(player);
-                            Log.InfoFormat("{0}'s outcome is {1}", player, player.Outcome);
-                        }
+                            hand.Status = HandStatusType.Completed;
 
-                        player.FlushHand();
+                            if (player != dealer)
+                            {
+                                //todo: make sure BJ's push
+                                dealer.DetermineOutcome(player, hand);
+                                Log.InfoFormat("{0}'s outcome is {1}", player, player.Outcome);
+                            }
+
+                            //todo: reclaim cards ? 
+                        }
                     }
 
                     continue;
                 }
 
-                playerListCount = Table.Instance.Players.Count;
-                for (int index = 0; index < playerListCount; index++)
+                foreach (IPlayer player in Table.Instance.Players)
                 {
-                    DecisionType playerDecision;
-
-                    do
+                    while (player.ActiveHand != null)
                     {
-                        playerDecision = dealer.PromptPlayerForDecision(Table.Instance.Players[index]);
-
-                        dealer.HandlePlayerDecision(Table.Instance.Players[index], playerDecision);
-
-                    } while (Table.Instance.Players[index].Status != PlayerStatusType.Busted && playerDecision != DecisionType.Stand && playerDecision != DecisionType.Surrender && playerDecision != DecisionType.DoubleDown);
-
-                    playerListCount = Table.Instance.Players.Count;
-
+                        var playerDecision = dealer.PromptPlayerForDecision(player);
+                        dealer.HandlePlayerDecision(player, playerDecision);
+                    }
                 }
 
                 foreach (IPlayer player in Table.Instance.Players)
                 {
                     if (player != dealer)
                     {
-                        dealer.DetermineOutcome(player);
-
-                        Log.InfoFormat("{0}'s outcome is {1}", player, player.Outcome);
-
-                        dealer.DeterminePayout(player);
+                        foreach (Hand hand in player.Hands)
+                        {
+                            dealer.DetermineOutcome(player, hand);
+                            dealer.DeterminePayout(player, hand);
+                            hand.Clear();
+                        }
                     }
-
-                    player.FlushHand();
+                    else
+                    {
+                        player.ActiveHand.Clear();
+                    }
                 }
             }
 

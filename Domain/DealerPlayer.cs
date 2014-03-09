@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using log4net;
 using System.Reflection;
 using Domain.Performance;
+using log4net;
 
 namespace Domain
 {
@@ -41,8 +39,6 @@ namespace Domain
 
         private void DealCardToPlayer(IPlayer player)
         {
-            long start = DateTime.Now.Ticks;
-
             Card card = Table.Instance.Deck.Draw();
 
             Log.DebugFormat("Dealing {0} to {1}", card, player);
@@ -53,7 +49,7 @@ namespace Domain
             
 
             //BUG if there's 52 cards in play still, next move crashes
-            //probably will never happen though
+            //todo: implement correct shuffle logic, they don't deal out the deck to zero cards
             if (Table.Instance.Deck.Cards.Count <= 0)
             {
                 Log.DebugFormat("Deck out of cards, reclaiming discards...");
@@ -72,17 +68,10 @@ namespace Domain
                 //    Log.DebugFormat("{0}", inPlayCard);
                 //}
             }
-
-            ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
-                    MethodInfo.GetCurrentMethod().DeclaringType.Name,
-                    MethodInfo.GetCurrentMethod().Name), start);
-        
         }
 
         public void Deal()
         {
-            long start = DateTime.Now.Ticks;
-
             for (int i = 0; i < NUMBER_OF_CARDS; i++)
             {
                 foreach (IPlayer player in Table.Instance.Players)
@@ -90,22 +79,18 @@ namespace Domain
                     DealCardToPlayer(player);
                 }
             }
-
-            ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
-                    MethodInfo.GetCurrentMethod().DeclaringType.Name,
-                    MethodInfo.GetCurrentMethod().Name), start);
         }
 
         public Card UpCard
         {
             get
             {
-                if (this.Hand.Count <= 0)
+                if (this.ActiveHand.Count <= 0)
                 {
                     return null;
                 }
 
-                return this.Hand[0];
+                return this.ActiveHand[0];
             }
         }
 
@@ -119,162 +104,128 @@ namespace Domain
              
         public void HandlePlayerDecision(IPlayer player, DecisionType decisionType)
         {
-            long start = DateTime.Now.Ticks;
-
             switch (decisionType)
             {
                 case DecisionType.Hit:
                     DealCardToPlayer(player);
+                    if (player.ActiveHand.Value > 21)
+                    {
+                        player.ActiveHand.Status = HandStatusType.Completed;
+                        //todo: clear cards into discard ?
+                    }
                     break;
                 case DecisionType.Stand:
+                    player.ActiveHand.Status = HandStatusType.Completed;
                     break;
                 case DecisionType.DoubleDown:
+                    DealCardToPlayer(player);
+                    player.ActiveHand.Status = HandStatusType.Completed;
                     break;
                 case DecisionType.Split:
 
-                    int i = Table.Instance.Players.IndexOf(player);
+                    var activeHand = player.ActiveHand;
+                    var splitCard = activeHand.Last();
+                    activeHand.Remove(splitCard);
 
-                    Type t = player.GetType();
-
-                    // Get constructor info. 
-                    ConstructorInfo[] ci = t.GetConstructors();
-
+                    var splitHand = new Hand() {IsSplitHand = true, Status = HandStatusType.Active };
+                    splitHand.Add(splitCard);
                     
-                    bool hasMatchingConstructor = false;
-                    int x;
-                    for (x = 0; x < ci.Length; x++)
-                    {
-                        ParameterInfo[] pi = ci[x].GetParameters();
+                    player.Hands.Add(splitHand);
 
-                        if (pi.Length == 1 && pi[0].ParameterType == typeof(string))
-                        {
-                            hasMatchingConstructor = true;
-                            break;
-                        }
-                    }
+                    //todo: handle split after aces, only 1 card... etc other rules
 
-                    if (hasMatchingConstructor)
-                    {
-                        // Construct the object.   
-                        object[] consargs = new object[1];
-                        consargs[0] = player.Name + "-SplitHand" + player.SplitPlayers.Count.ToString();
-                        IPlayer splitPlayer = (Player)ci[x].Invoke(consargs);
-                        splitPlayer.IsSplitPlayer = true;
-
-                        Card splitCard = player.Hand[0];                        
-
-                        splitPlayer.ReceiveCard(splitCard);
-
-                        Log.DebugFormat("Created {0}", splitPlayer);
-
-                        player.RemoveCard(splitCard);
-
-                        player.SplitPlayers.Add(splitPlayer);
-
-                        Table.Instance.Players.Insert(i + 1, splitPlayer);
-                    }
-                    
                     break;
                 case DecisionType.Surrender:
-                    foreach (Card card in player.Hand)
+                    foreach (Card card in player.ActiveHand)
                     {
                         Table.Instance.CardsInPlay.Remove(card);
                         Table.Instance.DiscardedCards.Add(card);
                     }
 
-                    player.Hand.Clear();
-                    player.Status = PlayerStatusType.Surrendered;
+                    player.ActiveHand.Clear();
+                    player.ActiveHand.Status = HandStatusType.Surrendered;
+
+                    //todo: handle bet reconciliation
 
                     break;
                 default:
                     throw new NotSupportedException();
             }
-
-            ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
-                    MethodInfo.GetCurrentMethod().DeclaringType.Name,
-                    MethodInfo.GetCurrentMethod().Name), start);
         }
 
-        public void DetermineOutcome(IPlayer player)
+        public void DetermineOutcome(IPlayer player, Hand hand)
         {
-            foreach (IPlayer splitPlayer in player.SplitPlayers)
+            if (hand.Value > 21)
             {
-                //Recursive call to add up split players statistics to base player
-                DetermineOutcome(splitPlayer);
-                player.Statistics.Wins += splitPlayer.Statistics.Wins;
-                player.Statistics.Losses += splitPlayer.Statistics.Losses;
-                player.Statistics.Pushes += splitPlayer.Statistics.Pushes;
-                player.Statistics.BlackJacks += splitPlayer.Statistics.BlackJacks;
-            }
-
-            if (player.Status == PlayerStatusType.Busted)
-            {
-                player.LostRound();
+                hand.Outcome = HandOutcomeType.Loss;
                 return;
             }
 
-            if (player.Status == PlayerStatusType.Surrendered)
+            if (hand.Status == HandStatusType.Surrendered)
             {
-                player.SurrenderedRound();
+                hand.Outcome = HandOutcomeType.Surrender;
+                return;
+            }
+            
+            if (this.ActiveHand.Value > 21)
+            {
+                hand.Outcome = HandOutcomeType.Win;
                 return;
             }
 
-            if (this.Status == PlayerStatusType.Busted)
+            if (hand.Value == this.ActiveHand.Value)
             {
-                player.WonRound();
+                hand.Outcome = HandOutcomeType.Push;
                 return;
             }
 
-            if (player.Hand.Value == this.Hand.Value)
+            if (hand.Value > this.ActiveHand.Value)
             {
-                player.PushedRound();
+                hand.Outcome = HandOutcomeType.Win;
+                return;
             }
 
-            if (player.Hand.Value > this.Hand.Value)
+            if (hand.Value < this.ActiveHand.Value)
             {
-                player.WonRound();
-            }
-
-            if (player.Hand.Value < this.Hand.Value)
-            {
-                player.LostRound();
+                hand.Outcome = HandOutcomeType.Loss;
+                return;
             }
 
             return;
         }
 
-        public void DeterminePayout(IPlayer player)
+        public void DeterminePayout(IPlayer player, Hand hand)
         {
-            Decimal payout;
+            //Decimal payout;
 
-            switch (player.Outcome)
-            {
-                case PlayerOutcomeType.Surrender:
+            //switch (player.Outcome)
+            //{
+            //    case PlayerOutcomeType.Surrender:
                     
-                    payout = player.CurrentBet / 2;
-                    this.BankRoll.Add(payout);
-                    player.BankRoll.Decrease(payout);
-                    break;
+            //        payout = player.CurrentBet / 2;
+            //        this.BankRoll.Add(payout);
+            //        player.BankRoll.Decrease(payout);
+            //        break;
 
-                case PlayerOutcomeType.Loss:
+            //    case PlayerOutcomeType.Loss:
                     
-                    payout = player.CurrentBet;
-                    this.BankRoll.Add(payout);
-                    player.BankRoll.Decrease(payout);
-                    break;
+            //        payout = player.CurrentBet;
+            //        this.BankRoll.Add(payout);
+            //        player.BankRoll.Decrease(payout);
+            //        break;
 
-                case PlayerOutcomeType.Win:
+            //    case PlayerOutcomeType.Win:
 
-                    payout = player.CurrentBet;
-                    if (player.HasBlackJack)
-                    {
-                        payout = player.CurrentBet * TableRules.Instance.BlackJackPayout;
-                    }
+            //        payout = player.CurrentBet;
+            //        if (player.Hand.Status == HandStatusType.BlackJack)
+            //        {
+            //            payout = player.CurrentBet * TableRules.Instance.BlackJackPayout;
+            //        }
 
-                    this.BankRoll.Decrease(payout);
-                    player.BankRoll.Add(payout);
-                    break;
-            }
+            //        this.BankRoll.Decrease(payout);
+            //        player.BankRoll.Add(payout);
+            //        break;
+            //}
         }
 
         public IPlayer LastPlayerDealtTo

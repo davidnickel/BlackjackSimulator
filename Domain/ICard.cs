@@ -9,6 +9,6 @@ namespace Domain
     {
         CardRank Rank { get; set; }
         CardSuit Suit { get; set; }
-        int TrueValue { get; set; }
+        int Value { get; set; }
     }
 }

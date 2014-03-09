@@ -23,25 +23,10 @@ namespace Domain
 
         public DecisionType DecidePlay(Player player, Card dealerFaceCard)
         {
-            IList<Card> playerCards = player.Hand;
 
-            StringBuilder stringBuilder = new StringBuilder();
+            DecisionType decision = _strategy.GetDecision(player.ActiveHand, dealerFaceCard);
 
-            foreach (Card card in playerCards)
-            {
-                stringBuilder.AppendFormat("{0}, ", card);
-            }            
-
-            DecisionType decision = _strategy.GetDecision(player.Hand, dealerFaceCard);
-
-            Log.DebugFormat("{0} has {1} Hand Value is {2}.  Dealer has {3}. {4} decides to {5}", 
-                player, 
-                stringBuilder, 
-                player.Hand.Value, 
-                dealerFaceCard, 
-                player,
-                decision);
-
+          
             return decision;
         }
     }

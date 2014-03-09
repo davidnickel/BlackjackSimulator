@@ -40,7 +40,7 @@ namespace Domain
             //use discarded cards and cards in play
             foreach (Card card in Table.Instance.DiscardedCards)
             {
-                if (card.Rank == CardRank.Ace || card.TrueValue == 10)
+                if (card.Rank == CardRank.Ace || card.Value == 10)
                 {
                     _cardCount--;
                 }

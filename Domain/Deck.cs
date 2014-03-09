@@ -65,10 +65,10 @@ namespace Domain
             {
                 int randomIndex = random.Next(0, _cards.Count);
 
-                if (_cards[randomIndex].Rank == CardRank.Ace)
-                {
-                    _cards[randomIndex].TrueValue = 11;
-                }
+                //if (_cards[randomIndex].Rank == CardRank.Ace)
+                //{
+                //    _cards[randomIndex].TrueValue = 11;
+                //}
 
                 shuffledDeck.Add(_cards[randomIndex]);                
                 _cards.RemoveAt(randomIndex);

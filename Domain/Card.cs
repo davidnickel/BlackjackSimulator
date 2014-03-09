@@ -11,14 +11,14 @@ namespace Domain
         {   
             Rank = rank;
             Suit = suit;
-            TrueValue = Convert.ToInt32(rank);
+            Value = Convert.ToInt32(rank);
             if (Convert.ToInt32(Rank) >= 10)
             {
-                TrueValue = 10;
+                Value = 10;
             }
             if (Rank == CardRank.Ace)
             {
-                TrueValue = 11;
+                Value = 1;
             }
         }
 
@@ -26,7 +26,7 @@ namespace Domain
 
         public CardSuit Suit { get; set; }
 
-        public int TrueValue { get; set; }          
+        public int Value { get; set; }          
 
         public override string ToString()
         {

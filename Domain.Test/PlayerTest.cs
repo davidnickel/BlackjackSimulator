@@ -7,28 +7,6 @@ namespace Domain.Test
     public class PlayerTest
     {
         [Test]
-        public void CannotBustFromSoftAceTest()
-        {
-            Console.WriteLine("***Begin cannotBustFromSoftAceTest***");
-            Card ace = new Card(CardRank.Ace, CardSuit.Clubs);
-            Card six = new Card(CardRank.Six, CardSuit.Clubs);
-            Card secondAce = new Card(CardRank.Ace, CardSuit.Diamonds);
-
-            Player dealerPlayer = new DealerPlayer();
-
-            dealerPlayer.ReceiveCard(ace);
-            dealerPlayer.ReceiveCard(six);
-            dealerPlayer.ReceiveCard(secondAce);
-
-            Assert.AreEqual(18, dealerPlayer.Hand.Value);
-
-            Console.WriteLine(dealerPlayer.Hand[0] + " value of " + dealerPlayer.Hand[0].TrueValue);
-            Console.WriteLine(dealerPlayer.Hand[1] + " value of " + dealerPlayer.Hand[1].TrueValue);
-            Console.WriteLine(dealerPlayer.Hand[2] + " value of " + dealerPlayer.Hand[2].TrueValue);
-            Console.WriteLine("***End cannotBustFromSoftAceTest***");
-        }
-
-        [Test]
         public void HasBlackJackWorksCorrectly()
         {
             Card ace = new Card(CardRank.Ace, CardSuit.Clubs);
@@ -40,17 +18,21 @@ namespace Domain.Test
             player1.ReceiveCard(ace);
             player1.ReceiveCard(ten);
 
-            Assert.IsTrue(player1.HasBlackJack);
+            Assert.AreEqual(true, player1.ActiveHand.HasBlackJack);
+            Assert.AreEqual(21, player1.ActiveHand.Value);
 
-            player1.FlushHand();
+            player1.ActiveHand.Clear();
 
-            Assert.AreEqual(0, player1.Hand.Count);
+            Assert.AreEqual(0, player1.ActiveHand.Count);
 
             player1.ReceiveCard(ten);
             player1.ReceiveCard(six);
             player1.ReceiveCard(five);
 
-            Assert.IsFalse(player1.HasBlackJack);
+            Assert.AreNotEqual(true, player1.ActiveHand.HasBlackJack);
+            Assert.AreEqual(21, player1.ActiveHand.Value);
         }
+
+      
     }
 }

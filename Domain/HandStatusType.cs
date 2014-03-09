@@ -5,11 +5,10 @@ using System.Text;
 
 namespace Domain
 {
-    public enum PlayerStatusType
+    public enum HandStatusType
     {
         Active = 1,
-        Busted = 2,
-        BlackJack = 3,
-        Surrendered = 4
+        Completed = 2,
+        Surrendered = 3
     }
 }

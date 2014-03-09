@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Domain
 {
-    public enum PlayerOutcomeType
+    public enum HandOutcomeType
     {
         Win = 1,
         Loss = 2,
