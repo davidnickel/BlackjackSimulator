@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using Domain;
@@ -12,13 +13,14 @@ namespace BlackJackSimulator
 {
     public class Program
     {
+        static ILog Log = LogManager.GetLogger(typeof(Program));
+
         public static void Main(string[] args)
         {
-            long start = DateTime.Now.Ticks;
-
+            Stopwatch watch = Stopwatch.StartNew();
 
             XmlConfigurator.Configure();
-            ILog Log = LogManager.GetLogger(typeof(Program));
+           
 
             TableRules.Instance.NumberOfDecks = 4;
             TableRules.Instance.BlackJackPayout = 3 / 2m;
@@ -27,50 +29,37 @@ namespace BlackJackSimulator
             DealerPlayer dealer = new DealerPlayer();
 
             Table.Instance.AddPlayer(new BasicStrategyPlayer());
-            Table.Instance.AddPlayer(new CardCounterPlayer());
-            Table.Instance.AddPlayer(new MimicDealerPlayer());
+            //Table.Instance.AddPlayer(new CardCounterPlayer());
+            //Table.Instance.AddPlayer(new MimicDealerPlayer());
             Table.Instance.AddPlayer(dealer);
 
             dealer.ShuffleDeck();
 
-            for (int i = 0; i < 20000; i++)
+            for (int i = 0; i < 1000000; i++)
             {
-                Log.InfoFormat("**************************");
-                Log.InfoFormat("Beginning Round {0} of {1}", i, 20000);
-                Log.InfoFormat("**************************");
+                decimal discard = Table.Instance.DiscardedCards.Count;
+                decimal deck = Table.Instance.Deck.Cards.Count;
+                decimal totalCards = discard + deck;
 
-                foreach (Card card in Table.Instance.CardsInPlay)
+                if ((discard/totalCards) >= .7m)
                 {
-                    Table.Instance.DiscardedCards.Add(card);
+                    //todo: if discard list is not used for stats at some point it can be removed
+                    // put a 70% penetration flag on the deck and just rebuild a new deck instance and shuffle it
+                    
+                    Table.Instance.Deck.Cards.AddRange(Table.Instance.DiscardedCards);
+                    dealer.ShuffleDeck();
+                    Table.Instance.DiscardedCards.Clear();
                 }
 
-                //Log.DebugFormat("Discard List Contains:");
-                //foreach (Card card in Table.Instance.DiscardedCards)
-                //{
-                //    Log.DebugFormat("{0},\n", card);
-                //}
-
-                //Log.DebugFormat("Cards in play were:");
-                //foreach (Card card in Table.Instance.CardsInPlay)
-                //{
-                //    Log.DebugFormat("{0},\n", card);
-                //}
-
-                Table.Instance.CardsInPlay.Clear();
-
-                //Log.DebugFormat("Playerlist contains:");
-                //foreach (IPlayer player in Table.Instance.Players)
-                //{
-                //    Log.DebugFormat("{0}", player);
-                //}
-                
                 foreach (IPlayer player in Table.Instance.Players)
                 {
                     player.Hands.Clear();
-                    //todo: implement reset logic, there's prob more to do, reclaim cards etc ?
+                    player.Hands.Add(new Hand()); // todo: remove all but first, then reset defaults on first
                 }
 
                 dealer.Deal();
+
+                //LogPlayerInfo();
 
                 if (dealer.ActiveHand.HasBlackJack)
                 {
@@ -82,24 +71,30 @@ namespace BlackJackSimulator
 
                             if (player != dealer)
                             {
-                                //todo: make sure BJ's push
                                 dealer.DetermineOutcome(player, hand);
-                                Log.InfoFormat("{0}'s outcome is {1}", player, player.Outcome);
+                                //Log.InfoFormat("{0}'s outcome is {1}", player, player.Outcome);
                             }
 
-                            //todo: reclaim cards ? 
+                            Table.Instance.DiscardedCards.AddRange(hand);
+                            hand.Clear();
                         }
                     }
-
                     continue;
                 }
 
                 foreach (IPlayer player in Table.Instance.Players)
                 {
-                    while (player.ActiveHand != null)
+                    while (player.ActiveHand != null && player.ActiveHand.Status == HandStatusType.Active)
                     {
+                        if (player.ActiveHand.Count == 1)
+                        {
+                            dealer.DealCardToPlayer(player);
+                        }
+
                         var playerDecision = dealer.PromptPlayerForDecision(player);
                         dealer.HandlePlayerDecision(player, playerDecision);
+
+                        //LogPlayerInfo();
                     }
                 }
 
@@ -111,30 +106,37 @@ namespace BlackJackSimulator
                         {
                             dealer.DetermineOutcome(player, hand);
                             dealer.DeterminePayout(player, hand);
+
+                            // it shouldn't matter that discards are not collected at the actual time of a bust etc
+                            // since the shuffle is theorectically random, the discard pile ordering should not come into play
+                            Table.Instance.DiscardedCards.AddRange(hand);
                             hand.Clear();
                         }
                     }
                     else
                     {
+                        Table.Instance.DiscardedCards.AddRange(player.ActiveHand);
                         player.ActiveHand.Clear();
                     }
                 }
             }
 
+            watch.Stop();
+
+            Console.WriteLine("total: " + watch.ElapsedMilliseconds);
+
+            Console.ReadLine();
+        }
+
+        private static void LogPlayerInfo()
+        {
             foreach (IPlayer player in Table.Instance.Players)
             {
-                if (player != dealer)
+                Log.InfoFormat("--{0}--", player);
+                for (int p = 0; p < player.Hands.Count; p++)
                 {
-                    Log.DebugFormat("{0} Statistics - {1}", player, player.Statistics);
+                    Log.InfoFormat("Hand{0}:\n{1}", p, player.Hands[p]);
                 }
-            }
-
-            ExecutionTimeManager.RecordExecutionTime("Entire Game", start);
-
-            if (ExecutionTimeManager.IsRecording())
-            {
-                Log.Debug(ExecutionTimeManager.GetExecutionTimes().ToString());
-                ExecutionTimeManager.Clear();
             }
         }
     }

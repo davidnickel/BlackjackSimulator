@@ -10,9 +10,10 @@ namespace Domain
 {
     public class Deck
     {
-        private IList<Card> _cards;
+        private List<Card> _cards;
         private static readonly ILog Log = LogManager.GetLogger(typeof(Deck));
-
+        
+        //todo: create multiple decks, probably can still call it a Deck class or Shoe but its really still 1 list of cards regardless
         public Deck()
         {
             _cards = new List<Card>();
@@ -40,48 +41,47 @@ namespace Domain
                 throw new NotSupportedException("Cannot draw card from empty deck.");
             }
 
+            //todo: could we draw from bottom of deck to reduce array moves ?  Should we use a linked list instead ? 
+            // We're never indexing anything but head or tail so really a linked list would work better no ?
+            // false, shuffling indexes in the middle somewhere, run some analysis
+
             Card card = _cards[0];
             _cards.RemoveAt(0);
 
-            ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
-               MethodInfo.GetCurrentMethod().DeclaringType.Name,
-               MethodInfo.GetCurrentMethod().Name), start);
+            //ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
+            //   MethodInfo.GetCurrentMethod().DeclaringType.Name,
+            //   MethodInfo.GetCurrentMethod().Name), start);
 
             return card;
         }
 
         public void Shuffle()
         {
-            long start = DateTime.Now.Ticks;
+            //long start = DateTime.Now.Ticks;
 
-            Log.DebugFormat("Shuffing deck...");
+           // Log.DebugFormat("Shuffing deck...");
 
-            IList<Card> shuffledDeck = new List<Card>();
             Random random = new Random();
 
             int fullDeckCount = _cards.Count;
 
-            for (int i = 0; i < fullDeckCount; i++)
+            for (int i = fullDeckCount - 1; i > 0; i--)
             {
-                int randomIndex = random.Next(0, _cards.Count);
+                int randomIndex = random.Next(i + 1);
 
-                //if (_cards[randomIndex].Rank == CardRank.Ace)
-                //{
-                //    _cards[randomIndex].TrueValue = 11;
-                //}
-
-                shuffledDeck.Add(_cards[randomIndex]);                
-                _cards.RemoveAt(randomIndex);
+                var tempCard = _cards[i];
+                _cards[i] = _cards[randomIndex];
+                _cards[randomIndex] = tempCard;
             }
 
-            _cards = shuffledDeck;
+            
 
-            ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
-               MethodInfo.GetCurrentMethod().DeclaringType.Name,
-               MethodInfo.GetCurrentMethod().Name), start);
+            //ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
+            //   MethodInfo.GetCurrentMethod().DeclaringType.Name,
+            //   MethodInfo.GetCurrentMethod().Name), start);
         }       
 
-        public IList<Card> Cards
+        public List<Card> Cards
         {
             get { return _cards; }            
         }

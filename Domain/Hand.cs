@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Domain
@@ -149,6 +150,19 @@ namespace Domain
             set;
         }
 
+        public override string ToString()
+        {
+            string result = String.Empty;
+
+            foreach (var card in this)
+            {
+                result += card.ToString() + Environment.NewLine;
+            }
+
+            result += "Value: " + this.Value + Environment.NewLine;
+
+            return result;
+        }
         
     }
 }

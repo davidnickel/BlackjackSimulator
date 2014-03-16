@@ -8,12 +8,10 @@ namespace Domain
 {
     public class DealerPlayer : Player
     {
-        private const int NUMBER_OF_CARDS = 2;
+        private const int NumberOfCards = 2;
         private readonly DealerDecisionMaker _decisionMaker;
         private static readonly ILog Log = LogManager.GetLogger(typeof(DealerPlayer));
-        private IPlayer _lastPlayerDealtTo;                
-
-
+        
         public DealerPlayer() : base("DealerPlayer") 
         {
             _decisionMaker = new DealerDecisionMaker(TableRules.Instance);
@@ -37,42 +35,20 @@ namespace Domain
             }
         }
 
-        private void DealCardToPlayer(IPlayer player)
+        public void DealCardToPlayer(IPlayer player)
         {
             Card card = Table.Instance.Deck.Draw();
-
-            Log.DebugFormat("Dealing {0} to {1}", card, player);
+            if (card == null)
+            {
+                throw new ArgumentNullException("Drew a null card from the deck, cannot continue.");
+            }
 
             player.ReceiveCard(card);            
-
-            Table.Instance.CardsInPlay.Add(card);
-            
-
-            //BUG if there's 52 cards in play still, next move crashes
-            //todo: implement correct shuffle logic, they don't deal out the deck to zero cards
-            if (Table.Instance.Deck.Cards.Count <= 0)
-            {
-                Log.DebugFormat("Deck out of cards, reclaiming discards...");
-                foreach (Card discard in Table.Instance.DiscardedCards)
-                {
-                    Table.Instance.Deck.Cards.Add(discard);
-                }
-
-                Table.Instance.Deck.Shuffle();
-
-                Table.Instance.DiscardedCards.Clear();
-
-                //Log.DebugFormat("Cards in play still are:");
-                //foreach (Card inPlayCard in Table.Instance.CardsInPlay)
-                //{
-                //    Log.DebugFormat("{0}", inPlayCard);
-                //}
-            }
         }
 
         public void Deal()
         {
-            for (int i = 0; i < NUMBER_OF_CARDS; i++)
+            for (int i = 0; i < NumberOfCards; i++)
             {
                 foreach (IPlayer player in Table.Instance.Players)
                 {
@@ -97,7 +73,7 @@ namespace Domain
 
         public DecisionType PromptPlayerForDecision(IPlayer player)
         {
-            Log.DebugFormat("Prompting {0} for decision...", player);
+           // Log.DebugFormat("Prompting {0} for decision...", player);
 
             return player.MakeDecision(this.UpCard);
         }
@@ -110,8 +86,9 @@ namespace Domain
                     DealCardToPlayer(player);
                     if (player.ActiveHand.Value > 21)
                     {
+                        //Table.Instance.DiscardedCards.AddRange(player.ActiveHand);
+                        //player.ActiveHand.Clear(); // cards are still needed here for outcome determination at end otherwise value is 0
                         player.ActiveHand.Status = HandStatusType.Completed;
-                        //todo: clear cards into discard ?
                     }
                     break;
                 case DecisionType.Stand:
@@ -125,24 +102,20 @@ namespace Domain
 
                     var activeHand = player.ActiveHand;
                     var splitCard = activeHand.Last();
-                    activeHand.Remove(splitCard);
+                    activeHand.Remove(splitCard);  //todo: don't use Remove(), just remove the last index no ?
 
-                    var splitHand = new Hand() {IsSplitHand = true, Status = HandStatusType.Active };
+                    var splitHand = new Hand() {IsSplitHand = true };
                     splitHand.Add(splitCard);
                     
                     player.Hands.Add(splitHand);
-
+                    
                     //todo: handle split after aces, only 1 card... etc other rules
 
                     break;
                 case DecisionType.Surrender:
-                    foreach (Card card in player.ActiveHand)
-                    {
-                        Table.Instance.CardsInPlay.Remove(card);
-                        Table.Instance.DiscardedCards.Add(card);
-                    }
 
-                    player.ActiveHand.Clear();
+                    //Table.Instance.DiscardedCards.AddRange(player.ActiveHand);
+                    //player.ActiveHand.Clear();
                     player.ActiveHand.Status = HandStatusType.Surrendered;
 
                     //todo: handle bet reconciliation
@@ -153,45 +126,57 @@ namespace Domain
             }
         }
 
-        public void DetermineOutcome(IPlayer player, Hand hand)
+        public void DetermineOutcome(IPlayer player, Hand playerHand)
         {
-            if (hand.Value > 21)
+            if (playerHand.Value > 21)
             {
-                hand.Outcome = HandOutcomeType.Loss;
+                playerHand.Outcome = HandOutcomeType.Loss;
                 return;
             }
 
-            if (hand.Status == HandStatusType.Surrendered)
+            if (playerHand.Status == HandStatusType.Surrendered)
             {
-                hand.Outcome = HandOutcomeType.Surrender;
+                playerHand.Outcome = HandOutcomeType.Surrender;
                 return;
             }
             
             if (this.ActiveHand.Value > 21)
             {
-                hand.Outcome = HandOutcomeType.Win;
+                playerHand.Outcome = HandOutcomeType.Win;
                 return;
             }
 
-            if (hand.Value == this.ActiveHand.Value)
+            if (playerHand.Value == this.ActiveHand.Value)
             {
-                hand.Outcome = HandOutcomeType.Push;
+                playerHand.Outcome = HandOutcomeType.Push;
                 return;
             }
 
-            if (hand.Value > this.ActiveHand.Value)
+            if (playerHand.Value > this.ActiveHand.Value)
             {
-                hand.Outcome = HandOutcomeType.Win;
+                playerHand.Outcome = HandOutcomeType.Win;
                 return;
             }
 
-            if (hand.Value < this.ActiveHand.Value)
+            if (playerHand.Value < this.ActiveHand.Value)
             {
-                hand.Outcome = HandOutcomeType.Loss;
+                playerHand.Outcome = HandOutcomeType.Loss;
                 return;
             }
 
             return;
+        }
+
+        public override Hand ActiveHand
+        {
+            get
+            {
+                if (Hands.Any())
+                {
+                    return Hands.First();
+                }
+                return null;
+            }
         }
 
         public void DeterminePayout(IPlayer player, Hand hand)
@@ -226,12 +211,6 @@ namespace Domain
             //        player.BankRoll.Add(payout);
             //        break;
             //}
-        }
-
-        public IPlayer LastPlayerDealtTo
-        {
-            get { return _lastPlayerDealtTo; }
-            set { _lastPlayerDealtTo = value; }
         }
 
         public override IBettingStrategy GetBettingStrategy()

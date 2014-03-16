@@ -11,8 +11,7 @@ namespace Domain
         private IList<IPlayer> _players;        
         private Deck _deck;
         private readonly ILog Log = LogManager.GetLogger(typeof(Table));
-        private IList<Card> _discardedCards;
-        private IList<Card> _cardsInPlay;
+        private List<Card> _discardedCards;        
 
         /// <summary>
         /// Returns a singleton instance of Table
@@ -28,21 +27,20 @@ namespace Domain
             _players = new List<IPlayer>();
             _deck = new Deck();
             _discardedCards = new List<Card>();
-            _cardsInPlay = new List<Card>();
         }
 
         public void AddPlayer(IPlayer player)
         {
             _players.Add(player);
 
-            Log.InfoFormat("Added {0} to the table.", player);
+          //  Log.InfoFormat("Added {0} to the table.", player);
         }
 
         public void RemovePlayer(Player player)
         {
             _players.Remove(player);
 
-            Log.InfoFormat("Removed {0} from the table.", player);
+         //   Log.InfoFormat("Removed {0} from the table.", player);
         }
 
         public IList<IPlayer> Players
@@ -55,17 +53,10 @@ namespace Domain
             get { return _deck; }
         }
 
-        public IList<Card> DiscardedCards
+        public List<Card> DiscardedCards
         {
             get { return _discardedCards; }
             set { _discardedCards = value; }
         }
-
-        public IList<Card> CardsInPlay
-        {
-            get { return _cardsInPlay; }
-            set { _cardsInPlay = value; }
-        }
-        
     }
 }

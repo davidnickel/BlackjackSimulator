@@ -17,7 +17,7 @@ namespace Domain
         public Player(string name)
         {
             _name = name;
-            Hands = new List<Hand>() {new Hand()};
+            Hands = new List<Hand>() {new Hand() };
             _statistics = new Statistics();
             _bankRoll = new BankRoll(1000.00m);
         }
@@ -29,11 +29,18 @@ namespace Domain
             _currentBet = GetBettingStrategy().MakeBet();
         }
 
-        public Hand ActiveHand
+        public virtual Hand ActiveHand
         {
             get
             {
-                return Hands.Last(hand => hand.Status == HandStatusType.Active);
+                for (int i = Hands.Count - 1; i >= 0; i--)
+                {
+                    if (Hands[i].Status == HandStatusType.Active)
+                    {
+                        return Hands[i];
+                    }
+                }
+                return null;
             }
 
         }

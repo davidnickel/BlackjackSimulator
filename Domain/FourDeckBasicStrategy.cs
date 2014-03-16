@@ -25,9 +25,9 @@ namespace Domain
             _strategyCard = CreateStrategyCard();
             _strategyCard2 = CreateStrategyCard2();
 
-            ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
-                    MethodInfo.GetCurrentMethod().DeclaringType.Name,
-                    MethodInfo.GetCurrentMethod().Name), start);
+            //ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
+            //        MethodInfo.GetCurrentMethod().DeclaringType.Name,
+            //        MethodInfo.GetCurrentMethod().Name), start);
         }
         
         public DecisionType GetDecision(Hand playerHand, Card dealerUpCard)
@@ -62,9 +62,9 @@ namespace Domain
             }
             finally
             {
-                ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
-                    MethodInfo.GetCurrentMethod().DeclaringType.Name,
-                    MethodInfo.GetCurrentMethod().Name), start);
+                //ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
+                //    MethodInfo.GetCurrentMethod().DeclaringType.Name,
+                //    MethodInfo.GetCurrentMethod().Name), start);
             }
 
        }      
@@ -250,9 +250,9 @@ namespace Domain
                 new CardBasedStrategyCell(CardRank.Ace, CardRank.Ace, 12, CardRank.Ace, DecisionType.Split)
             };
 
-            ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
-                    MethodInfo.GetCurrentMethod().DeclaringType.Name,
-                    MethodInfo.GetCurrentMethod().Name), start);
+            //ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
+            //        MethodInfo.GetCurrentMethod().DeclaringType.Name,
+            //        MethodInfo.GetCurrentMethod().Name), start);
 
             return strategyCells;
             
@@ -517,9 +517,9 @@ namespace Domain
                 new ValueBasedStrategyCell(21, CardRank.Ace, DecisionType.Stand)
             };
 
-            ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
-                    MethodInfo.GetCurrentMethod().DeclaringType.Name,
-                    MethodInfo.GetCurrentMethod().Name), start);
+            //ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
+            //        MethodInfo.GetCurrentMethod().DeclaringType.Name,
+            //        MethodInfo.GetCurrentMethod().Name), start);
 
             return strategyCells;
 

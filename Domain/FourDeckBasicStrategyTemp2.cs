@@ -47,9 +47,9 @@ namespace Domain.Temp2
             }
             finally
             {
-                ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
-                    MethodInfo.GetCurrentMethod().DeclaringType.Name,
-                    MethodInfo.GetCurrentMethod().Name), start);
+                //ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
+                //    MethodInfo.GetCurrentMethod().DeclaringType.Name,
+                //    MethodInfo.GetCurrentMethod().Name), start);
             }
         }
 
