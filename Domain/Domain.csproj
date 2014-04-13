@@ -75,8 +75,6 @@
     <Compile Include="EnumUtil.cs" />
     <Compile Include="FlatBettingStrategy.cs" />
     <Compile Include="FourDeckBasicStrategy.cs" />
-    <Compile Include="FourDeckBasicStrategyTemp.cs" />
-    <Compile Include="FourDeckBasicStrategyTemp2.cs" />
     <Compile Include="Hand.cs" />
     <Compile Include="IBankRoll.cs" />
     <Compile Include="IBasicStrategy.cs" />
@@ -86,11 +84,6 @@
     <Compile Include="IPlayer.cs" />
     <Compile Include="IStatistics.cs" />
     <Compile Include="MimicDealerPlayer.cs" />
-    <Compile Include="Performance\ExecutionItem.cs" />
-    <Compile Include="Performance\ExecutionItemCollection.cs" />
-    <Compile Include="Performance\ExecutionTimeDelegate.cs" />
-    <Compile Include="Performance\ExecutionTimeEventArgs.cs" />
-    <Compile Include="Performance\ExecutionTimeManager.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="HandOutcomeType.cs" />
     <Compile Include="HandStatusType.cs" />

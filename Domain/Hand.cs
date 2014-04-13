@@ -24,6 +24,7 @@ namespace Domain
             _containsSoftAce = false;
             Status = HandStatusType.Active;
             Outcome = HandOutcomeType.InProgress;
+            ParentHand = null;
         }
 
         public void Add(Card card)
@@ -143,11 +144,18 @@ namespace Domain
             set;
         }
 
-
-        public bool IsSplitHand
+        public Hand ParentHand
         {
             get;
             set;
+        }
+        
+        public bool IsSplitHand
+        {
+            get
+            {
+                return ParentHand != null;
+            }
         }
 
         public override string ToString()

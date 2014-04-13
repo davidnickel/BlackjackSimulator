@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
-using Domain.Performance;
+
 using log4net;
 
 namespace Domain
@@ -80,6 +80,23 @@ namespace Domain
              
         public void HandlePlayerDecision(IPlayer player, DecisionType decisionType)
         {
+
+            if (ActiveHand.IsSplitHand && ActiveHand.Count >= 2)
+            {
+                if (player.ActiveHand.ParentHand.Count > 1)
+                {
+                    throw new NotSupportedException("more than 1 card in parent hand of split child hand.");
+                }
+
+                if (player.ActiveHand.ParentHand[0].Rank == CardRank.Ace)
+                {
+                    if (decisionType != DecisionType.Split)
+                    {
+                        decisionType = DecisionType.Stand;
+                    }
+                }
+            }
+
             switch (decisionType)
             {
                 case DecisionType.Hit:
@@ -104,18 +121,14 @@ namespace Domain
                     var splitCard = activeHand.Last();
                     activeHand.Remove(splitCard);  //todo: don't use Remove(), just remove the last index no ?
 
-                    var splitHand = new Hand() {IsSplitHand = true };
+                    var splitHand = new Hand() {ParentHand = activeHand};
                     splitHand.Add(splitCard);
                     
                     player.Hands.Add(splitHand);
                     
-                    //todo: handle split after aces, only 1 card... etc other rules
-
                     break;
                 case DecisionType.Surrender:
 
-                    //Table.Instance.DiscardedCards.AddRange(player.ActiveHand);
-                    //player.ActiveHand.Clear();
                     player.ActiveHand.Status = HandStatusType.Surrendered;
 
                     //todo: handle bet reconciliation

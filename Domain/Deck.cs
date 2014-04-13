@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using log4net;
-using Domain.Performance;
+
 using System.Reflection;
 
 namespace Domain
@@ -34,8 +34,6 @@ namespace Domain
 
         public Card Draw()
         {
-            long start = DateTime.Now.Ticks;
-
             if (_cards.Count <= 0)
             {
                 throw new NotSupportedException("Cannot draw card from empty deck.");
@@ -48,17 +46,11 @@ namespace Domain
             Card card = _cards[0];
             _cards.RemoveAt(0);
 
-            //ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
-            //   MethodInfo.GetCurrentMethod().DeclaringType.Name,
-            //   MethodInfo.GetCurrentMethod().Name), start);
-
             return card;
         }
 
         public void Shuffle()
         {
-            //long start = DateTime.Now.Ticks;
-
            // Log.DebugFormat("Shuffing deck...");
 
             Random random = new Random();
@@ -75,10 +67,6 @@ namespace Domain
             }
 
             
-
-            //ExecutionTimeManager.RecordExecutionTime(String.Format("{0}.{1}()",
-            //   MethodInfo.GetCurrentMethod().DeclaringType.Name,
-            //   MethodInfo.GetCurrentMethod().Name), start);
         }       
 
         public List<Card> Cards

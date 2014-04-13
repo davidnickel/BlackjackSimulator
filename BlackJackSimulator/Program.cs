@@ -7,7 +7,7 @@ using Domain;
 using log4net;
 using log4net.Config;
 using System.Reflection;
-using Domain.Performance;
+
 
 namespace BlackJackSimulator
 {
@@ -17,7 +17,7 @@ namespace BlackJackSimulator
 
         public static void Main(string[] args)
         {
-            Stopwatch watch = Stopwatch.StartNew();
+           // Stopwatch watch = Stopwatch.StartNew();
 
             XmlConfigurator.Configure();
            
@@ -86,11 +86,6 @@ namespace BlackJackSimulator
                 {
                     while (player.ActiveHand != null && player.ActiveHand.Status == HandStatusType.Active)
                     {
-                        if (player.ActiveHand.Count == 1)
-                        {
-                            dealer.DealCardToPlayer(player);
-                        }
-
                         var playerDecision = dealer.PromptPlayerForDecision(player);
                         dealer.HandlePlayerDecision(player, playerDecision);
 
@@ -121,11 +116,10 @@ namespace BlackJackSimulator
                 }
             }
 
-            watch.Stop();
+         //   watch.Stop();
+//Console.WriteLine("total: " + watch.ElapsedMilliseconds);
 
-            Console.WriteLine("total: " + watch.ElapsedMilliseconds);
-
-            Console.ReadLine();
+            //Console.ReadLine();
         }
 
         private static void LogPlayerInfo()
